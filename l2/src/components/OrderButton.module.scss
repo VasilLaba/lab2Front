@@ -1,0 +1,61 @@
+@import '../styles';
+
+$oval-size: 57px;
+$amount-border-radius: 29px;
+
+.container {
+    position: relative;
+    margin-left: auto;
+}
+
+.oval {
+    position: relative;
+    cursor: pointer;
+    height: $oval-size;
+    width: $oval-size;
+    object-fit: contain;
+    background-size: $oval-size $oval-size;
+    background-color: $success-base-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border-radius: 50%;
+    color: $background-base-color;
+    z-index: 2;
+}
+
+.displayAmount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    background: #717171;
+    border-top-left-radius: $amount-border-radius;
+    border-bottom-left-radius: $amount-border-radius;
+    width: 60px;
+    height: $oval-size;
+}
+
+.ovalContainer {
+    font-size: $large-font-size;
+}
+
+.controlsList {
+    width: 100%;
+    height: 100%;
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        &:first-child {
+            border-bottom: 1px solid $content-base-color;
+        }
+    }
+}

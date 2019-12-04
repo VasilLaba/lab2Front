@@ -1,0 +1,32 @@
+@import '../styles';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $content-base-color;
+    margin-bottom: 20px;
+}
+
+.mealName {
+    margin: 20px 40px 40px;
+    font-size: $medium-font-size;
+}
+
+.mealImage {
+    width: 100%;
+    object-fit: contain;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: $background-secondary-color;
+}
+
+.price {
+    color: $success-base-color;
+    margin-left: 100px;
+    font-size: $medium-font-size;
+}

@@ -1,0 +1,13 @@
+@import '../styles';
+
+.notFound {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: $large-font-size;
+    font-weight: bold;
+}
+
+.noWrap {
+    white-space: nowrap;
+}
